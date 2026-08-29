@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naomi Prado — Devsign · Diseñadora UX/UI</title>
+<meta name="description" content="Portafolio de Naomi Shafira Prado Hinojosa. Devsign: diseño UX/UI y desarrollo. Sistemas de diseño, producto digital e identidad. Cochabamba, Bolivia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div id="prog"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="sig" href="#inicio"><span class="logo" aria-hidden="true"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M15 11 L6 20 L15 29" fill="none" stroke="#38BDF8" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 11 L34 20 L25 29" fill="none" stroke="#FF4E93" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="3.1" fill="#FF4E93"/></svg></span><b>Naomi Prado</b><i>devsign</i></a>
+    <nav>
+      <a href="#trabajo">Trabajo</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="tema" id="tema">◐ <span id="tema-lbl">Claro</span></button>
+  </div>
+</header>
+
+<!-- HÉROE -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="role ghost">Diseñadora UX/UI · Cochabamba, Bolivia</div>
+        <h1>
+          <span class="ln"><span>Diseño</span></span>
+          <span class="ln"><span>lo que después</span></span>
+          <span class="ln"><span><em>construyo</em>.</span></span>
+        </h1>
+        
+        <p class="pitch ghost">Seis años traduciendo operaciones complejas —logística, salud, banca, universidades— en interfaces que la gente usa sin manual.</p>
+        <div class="hero-cta ghost">
+          <a href="#trabajo" class="btn btn-1">Ver el trabajo →</a>
+          <a href="#sistema" class="btn btn-2">Mi sistema de diseño</a>
+        </div>
+      </div>
+      <div class="spec-card ghost">
+        <div class="spec-row"><span>Estado</span><span><i class="dot"></i>Disponible</span></div>
+        <div class="spec-row"><span>Experiencia</span><span><b data-count="6">0</b>+ años</span></div>
+        <div class="spec-row"><span>Proyectos</span><span><b data-count="20">0</b>+</span></div>
+        <div class="spec-row"><span>Formación</span><span>Ing. de Sistemas</span></div>
+        <div class="spec-row"><span>Herramienta base</span><span>Figma</span></div>
+        <div class="spec-row"><span>Base</span><span>Cochabamba, BO</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap band-in">
+    <div class="band-t">
+      <span class="eyebrow">Herramientas</span>
+      <p>Figma es mi herramienta principal de punta a punta: investigación, wireframes de baja y media fidelidad, alta fidelidad, prototipo navegable, librerías de componentes y entrega a desarrollo.</p>
+    </div>
+    <div class="toolrow">
+      <span class="tool tool-main">
+        <svg viewBox="0 0 24 36" aria-hidden="true"><circle cx="18" cy="18" r="6" fill="#1ABCFE"/><path d="M6 24a6 6 0 016-6h6v6a6 6 0 01-12 0z" fill="#0ACF83"/><path d="M6 12a6 6 0 016-6h6v12h-6a6 6 0 01-6-6z" fill="#FF7262"/><path d="M6 6a6 6 0 016-6h6v12h-6A6 6 0 016 6z" fill="#F24E1E"/><path d="M6 30a6 6 0 016-6h6v6a6 6 0 01-12 0z" fill="#A259FF"/></svg>
+        Figma <b>principal</b>
+      </span>
+      <span class="tool">Prototipado</span>
+      <span class="tool">Design tokens</span>
+      <span class="tool">HTML · CSS · JS</span>
+      <span class="tool">Illustrator</span>
+      <span class="tool">Photoshop</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJO -->
+<section id="trabajo">
+  <div class="wrap">
+    <div class="sec-head ghost">
+      <div class="eyebrow">Trabajo seleccionado</div>
+      <h2>Producto, marca<br>y sistemas.</h2>
+      <p class="lead">De tableros operativos con miles de registros diarios a la identidad completa de un grupo hotelero.</p>
+    </div>
+    <div class="filters ghost">
+      <button class="chip" data-f="all" aria-pressed="true">Todo</button>
+      <button class="chip" data-f="producto" aria-pressed="false">Producto &amp; sistemas</button>
+      <button class="chip" data-f="web" aria-pressed="false">Sitios corporativos</button>
+      <button class="chip" data-f="academico" aria-pressed="false">Sector académico</button>
+      <button class="chip" data-f="marca" aria-pressed="false">Marca &amp; identidad</button>
+      <button class="chip" data-f="concepto" aria-pressed="false">Conceptos propios</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- SISTEMA -->
+<section id="sistema" class="sistema">
+  <div class="wrap">
+    <div class="sec-head ghost">
+      <div class="eyebrow">Sistemas de diseño</div>
+      <h2>Esto no es una<br>captura. Es el sistema.</h2>
+      <p class="lead">Tokens con rol funcional, componentes con todos sus estados y reglas escritas. Todo lo de abajo funciona de verdad — tocalo. Y el botón de tema arriba usa estos mismos tokens: un sistema bien armado cambia de piel sin rehacer nada.</p>
+    </div>
+    <div class="ds-grid">
+      <div class="ds-panel p-8 ghost">
+        <h4>01 · Tokens de color — cada uno con un trabajo</h4>
+        <div class="tok" id="tok"></div>
+      </div>
+      <div class="ds-panel p-4 ghost">
+        <h4>02 · Escala tipográfica</h4>
+        <ul class="scale">
+          <li><span class="lbl">Display</span><span class="smp" style="font-size:34px">Aa</span></li>
+          <li><span class="lbl">Título 1</span><span class="smp" style="font-size:27px">Aa</span></li>
+          <li><span class="lbl">Título 2</span><span class="smp" style="font-size:21px">Aa</span></li>
+          <li><span class="lbl">Cuerpo</span><span class="smp" style="font-size:16px;font-family:var(--f-body);font-weight:400">Texto de lectura</span></li>
+          <li><span class="lbl">Etiqueta</span><span class="smp" style="font-size:11px;font-family:var(--f-mono);font-weight:400;letter-spacing:.12em">ETIQUETA / DATO</span></li>
+        </ul>
+      </div>
+      <div class="ds-panel p-6 ghost">
+        <h4>03 · Botones — todos los estados, no solo el bonito</h4>
+        <div class="states">
+          <button class="dsbtn pri" id="btn-toast">Guardar cambios</button>
+          <button class="dsbtn sec">Cancelar</button>
+          <button class="dsbtn dis" disabled>Deshabilitado</button>
+          <span class="dsbtn load"><span class="spin"></span>Guardando</span>
+        </div>
+        <div class="badges">
+          <span class="bdg b-ok">Confirmado</span><span class="bdg b-wa">En proceso</span>
+          <span class="bdg b-er">Rechazado</span><span class="bdg b-nu">Sin asignar</span>
+        </div>
+      </div>
+      <div class="ds-panel p-6 ghost">
+        <h4>04 · Validación en vivo — escribí algo</h4>
+        <div class="field" id="fld">
+          <label for="mail">Correo del transportista</label>
+          <input id="mail" type="text" placeholder="nombre@empresa.com" autocomplete="off">
+          <div class="msg" id="msg">El error se explica antes de enviar, no después.</div>
+        </div>
+      </div>
+      <div class="ds-panel p-8 ghost">
+        <h4>05 · Tabla operativa — densidad alta, lectura tranquila</h4>
+        <table class="dstable">
+          <thead><tr><th>Folio</th><th>Transportista</th><th>Cita</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr><td>F-20481</td><td>Transportes Andina</td><td>08:30</td><td><span class="bdg b-ok">Confirmado</span></td></tr>
+            <tr><td>F-20482</td><td>Log. del Valle</td><td>09:15</td><td><span class="bdg b-wa">En proceso</span></td></tr>
+            <tr><td>F-20483</td><td>Cargo Sur</td><td>10:00</td><td><span class="bdg b-er">Rechazado</span></td></tr>
+            <tr><td>F-20484</td><td>—</td><td>10:45</td><td><span class="bdg b-nu">Sin asignar</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ds-panel p-4 ghost">
+        <h4>06 · Espaciado — base 8</h4>
+        <div class="spacers">
+          <div style="width:26px;height:8px" data-v="8"></div>
+          <div style="width:26px;height:16px" data-v="16"></div>
+          <div style="width:26px;height:24px" data-v="24"></div>
+          <div style="width:26px;height:40px" data-v="40"></div>
+          <div style="width:26px;height:64px" data-v="64"></div>
+        </div>
+        <p style="font-size:13.5px;margin-top:6px">Nada se posiciona "a ojo". Si un espacio no está en la escala, hay que justificarlo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-head ghost">
+      <div class="eyebrow">Cómo trabajo</div>
+      <h2>Del post-it<br>al pixel exacto.</h2>
+      <p class="lead">Ningún proyecto empieza en Figma con colores. Empieza con preguntas, papel y estructura.</p>
+    </div>
+    <div class="fases ghost">
+      <div class="fase"><div class="num">01 — Empatizar</div><h3>Entender a quién le duele</h3><p>Entrevistas con usuarios y POs, revisión de tickets de soporte y observación de cómo la gente resuelve hoy el problema sin la herramienta.</p></div>
+      <div class="fase"><div class="num">02 — Definir</div><h3>Nombrar el problema real</h3><p>Mapa de recorrido, puntos de fricción y una sola frase que define qué estamos resolviendo. Si no cabe en una frase, todavía no está definido.</p></div>
+      <div class="fase"><div class="num">03 — Idear</div><h3>Muchas opciones, rápido</h3><p>Bocetos en papel, mapas de sitio y flujos. Se descartan barato ahora para no descartar caro después.</p></div>
+      <div class="fase"><div class="num">04 — Prototipar</div><h3>Baja, media y alta</h3><p>Tres niveles de fidelidad, cada uno con una pregunta distinta que responder antes de subir al siguiente.</p></div>
+      <div class="fase"><div class="num">05 — Validar</div><h3>Probar y entregar</h3><p>Pruebas con usuarios reales, ajustes y entrega documentada: componentes, estados y reglas de uso.</p></div>
+    </div>
+
+    <div class="fidwrap ghost">
+      <div class="fidbar">
+        <span class="mono">Misma pantalla · tres niveles</span>
+        <button class="ftab" data-fid="1" aria-pressed="true">Baja</button>
+        <button class="ftab" data-fid="2" aria-pressed="false">Media</button>
+        <button class="ftab" data-fid="3" aria-pressed="false">Alta</button>
+      </div>
+      <div class="fidstage">
+        <div class="fidart">
+          <svg class="on" data-f="1" viewBox="0 0 460 300" role="img" aria-label="Wireframe de baja fidelidad">
+            <rect width="460" height="300" fill="#F2F0F5"/>
+            <rect x="18" y="18" width="424" height="28" rx="4" fill="#DAD6E0"/>
+            <rect x="28" y="27" width="54" height="10" rx="3" fill="#B4AEBF"/>
+            <rect x="300" y="28" width="34" height="8" rx="3" fill="#C6C1CE"/><rect x="344" y="28" width="34" height="8" rx="3" fill="#C6C1CE"/>
+            <rect x="388" y="24" width="44" height="16" rx="8" fill="#B4AEBF"/>
+            <rect x="18" y="56" width="424" height="96" rx="4" fill="#E9E6EE" stroke="#CFCAD8" stroke-dasharray="5 4"/>
+            <rect x="34" y="74" width="46" height="8" rx="3" fill="#C6C1CE"/>
+            <rect x="34" y="90" width="168" height="14" rx="3" fill="#B4AEBF"/><rect x="34" y="110" width="132" height="14" rx="3" fill="#B4AEBF"/>
+            <rect x="34" y="132" width="66" height="12" rx="6" fill="#9E97AC"/>
+            <rect x="286" y="70" width="140" height="68" rx="4" fill="none" stroke="#CFCAD8"/>
+            <line x1="286" y1="70" x2="426" y2="138" stroke="#CFCAD8"/><line x1="426" y1="70" x2="286" y2="138" stroke="#CFCAD8"/>
+            <rect x="18" y="164" width="134" height="118" rx="4" fill="#E9E6EE" stroke="#CFCAD8" stroke-dasharray="5 4"/>
+            <rect x="163" y="164" width="134" height="118" rx="4" fill="#E9E6EE" stroke="#CFCAD8" stroke-dasharray="5 4"/>
+            <rect x="308" y="164" width="134" height="118" rx="4" fill="#E9E6EE" stroke="#CFCAD8" stroke-dasharray="5 4"/>
+            <g fill="#C6C1CE">
+              <circle cx="44" cy="190" r="10"/><rect x="34" y="212" width="52" height="9" rx="3"/><rect x="34" y="228" width="102" height="7" rx="3"/><rect x="34" y="242" width="86" height="7" rx="3"/><rect x="34" y="258" width="44" height="9" rx="4"/>
+              <circle cx="189" cy="190" r="10"/><rect x="179" y="212" width="52" height="9" rx="3"/><rect x="179" y="228" width="102" height="7" rx="3"/><rect x="179" y="242" width="86" height="7" rx="3"/><rect x="179" y="258" width="44" height="9" rx="4"/>
+              <circle cx="334" cy="190" r="10"/><rect x="324" y="212" width="52" height="9" rx="3"/><rect x="324" y="228" width="102" height="7" rx="3"/><rect x="324" y="242" width="86" height="7" rx="3"/><rect x="324" y="258" width="44" height="9" rx="4"/>
+            </g>
+          </svg>
+          <svg data-f="2" viewBox="0 0 460 300" role="img" aria-label="Fidelidad media, con contenido real y grilla anotada">
+            <rect width="460" height="300" fill="#FBFAFC"/>
+            <rect x="18" y="18" width="424" height="28" rx="4" fill="#2E2A38"/>
+            <circle cx="34" cy="32" r="6" fill="#fff"/>
+            <text x="46" y="36" font-family="monospace" font-size="9" fill="#fff">MARCA</text>
+            <text x="292" y="36" font-family="monospace" font-size="8" fill="#B9B4C4">Servicios</text>
+            <text x="342" y="36" font-family="monospace" font-size="8" fill="#B9B4C4">Nosotros</text>
+            <rect x="392" y="24" width="42" height="16" rx="8" fill="#fff"/>
+            <text x="398" y="35" font-family="monospace" font-size="7" fill="#17131F">CONTACTO</text>
+            <rect x="18" y="56" width="424" height="96" rx="4" fill="#EFEDF2"/>
+            <text x="34" y="80" font-family="monospace" font-size="8" fill="#D6156A" letter-spacing="1">EYEBROW · SECCIÓN</text>
+            <text x="34" y="102" font-family="sans-serif" font-size="19" font-weight="700" fill="#17131F">Titular principal</text>
+            <text x="34" y="120" font-family="sans-serif" font-size="9" fill="#6B6577">Subtítulo que explica la propuesta en</text>
+            <text x="34" y="132" font-family="sans-serif" font-size="9" fill="#6B6577">una sola línea legible.</text>
+            <rect x="34" y="139" width="62" height="13" rx="6" fill="#8A8299"/>
+            <rect x="286" y="70" width="140" height="68" rx="6" fill="#E2DFE8" stroke="#CFCAD8"/>
+            <text x="326" y="108" font-family="monospace" font-size="7.5" fill="#9E97AC">IMAGEN 16:9</text>
+            <line x1="18" y1="160" x2="442" y2="160" stroke="#D6156A" stroke-dasharray="3 3" opacity=".55"/>
+            <text x="18" y="157" font-family="monospace" font-size="7" fill="#D6156A">grilla · 3 col · gap 24</text>
+            <rect x="18" y="168" width="134" height="114" rx="8" fill="#fff" stroke="#E2DFE8"/>
+            <rect x="163" y="168" width="134" height="114" rx="8" fill="#fff" stroke="#E2DFE8"/>
+            <rect x="308" y="168" width="134" height="114" rx="8" fill="#fff" stroke="#E2DFE8"/>
+            <g font-family="sans-serif">
+              <circle cx="44" cy="192" r="9" fill="#EFEDF2"/><text x="34" y="220" font-size="10" font-weight="700" fill="#17131F">Servicio 01</text><text x="34" y="235" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="34" y="246" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="34" y="266" font-size="8" fill="#D6156A">Ver más →</text>
+              <circle cx="189" cy="192" r="9" fill="#EFEDF2"/><text x="179" y="220" font-size="10" font-weight="700" fill="#17131F">Servicio 02</text><text x="179" y="235" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="179" y="246" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="179" y="266" font-size="8" fill="#D6156A">Ver más →</text>
+              <circle cx="334" cy="192" r="9" fill="#EFEDF2"/><text x="324" y="220" font-size="10" font-weight="700" fill="#17131F">Servicio 03</text><text x="324" y="235" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="324" y="246" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="324" y="266" font-size="8" fill="#D6156A">Ver más →</text>
+            </g>
+          </svg>
+          <svg data-f="3" viewBox="0 0 460 300" role="img" aria-label="Alta fidelidad, con marca y color aplicados">
+            <defs>
+              <linearGradient id="h3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#241E31"/><stop offset="1" stop-color="#3A1B4A"/></linearGradient>
+              <linearGradient id="o3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6156A"/><stop offset="1" stop-color="#E9A21B"/></linearGradient>
+            </defs>
+            <rect width="460" height="300" fill="#EDEBF1"/>
+            <rect x="18" y="18" width="424" height="134" rx="10" fill="url(#h3)"/>
+            <circle cx="392" cy="72" r="46" fill="url(#o3)" opacity=".92"/>
+            <circle cx="36" cy="38" r="6" fill="#fff"/>
+            <text x="47" y="41" font-family="monospace" font-size="8" fill="#fff" letter-spacing="1">MARCA</text>
+            <text x="286" y="41" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.7)">Servicios</text>
+            <text x="336" y="41" font-family="sans-serif" font-size="8" fill="rgba(255,255,255,.7)">Nosotros</text>
+            <text x="34" y="82" font-family="monospace" font-size="7.5" fill="#E9A21B" letter-spacing="1.6">— NUESTROS SERVICIOS</text>
+            <text x="34" y="106" font-family="sans-serif" font-size="21" font-weight="800" fill="#fff">Titular principal</text>
+            <text x="34" y="124" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,.72)">Subtítulo que explica la propuesta en una</text>
+            <text x="34" y="136" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,.72)">sola línea legible.</text>
+            <rect x="262" y="128" width="66" height="16" rx="8" fill="#D6156A"/>
+            <text x="275" y="139" font-family="sans-serif" font-size="7.5" font-weight="600" fill="#fff">Empezar</text>
+            <rect x="18" y="168" width="134" height="114" rx="12" fill="#fff"/><rect x="163" y="168" width="134" height="114" rx="12" fill="#fff"/><rect x="308" y="168" width="134" height="114" rx="12" fill="#fff"/>
+            <rect x="18" y="168" width="134" height="4" rx="2" fill="#D6156A"/><rect x="163" y="168" width="134" height="4" rx="2" fill="#0F8C6E"/><rect x="308" y="168" width="134" height="4" rx="2" fill="#E9A21B"/>
+            <circle cx="46" cy="196" r="11" fill="#FCE7F0"/><circle cx="46" cy="196" r="4" fill="#D6156A"/>
+            <circle cx="191" cy="196" r="11" fill="#E2F4EE"/><circle cx="191" cy="196" r="4" fill="#0F8C6E"/>
+            <circle cx="336" cy="196" r="11" fill="#FBF0DC"/><circle cx="336" cy="196" r="4" fill="#E9A21B"/>
+            <g font-family="sans-serif">
+              <text x="34" y="226" font-size="10.5" font-weight="700" fill="#17131F">Servicio 01</text><text x="34" y="241" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="34" y="252" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="34" y="270" font-size="8" font-weight="600" fill="#D6156A">Ver más →</text>
+              <text x="179" y="226" font-size="10.5" font-weight="700" fill="#17131F">Servicio 02</text><text x="179" y="241" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="179" y="252" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="179" y="270" font-size="8" font-weight="600" fill="#0F8C6E">Ver más →</text>
+              <text x="324" y="226" font-size="10.5" font-weight="700" fill="#17131F">Servicio 03</text><text x="324" y="241" font-size="8" fill="#8A8299">Descripción breve de lo que</text><text x="324" y="252" font-size="8" fill="#8A8299">incluye este servicio.</text><text x="324" y="270" font-size="8" font-weight="600" fill="#E9A21B">Ver más →</text>
+            </g>
+          </svg>
+        </div>
+        <div class="fidinfo">
+          <div class="step on" data-f="1">
+            <div class="when">Etapa 03 · Idear</div><h3>Baja fidelidad</h3>
+            <p>Gris, sin marca, sin tipografía definitiva. La única pregunta que responde es <strong>qué va dónde y en qué orden lee la persona</strong>.</p>
+            <ul><li>Se hace en minutos, para poder tirarlo sin culpa</li><li>Nadie discute colores porque no hay colores</li><li>Se valida estructura y jerarquía con el PO</li></ul>
+          </div>
+          <div class="step" data-f="2">
+            <div class="when">Etapa 03–04 · Estructurar</div><h3>Fidelidad media</h3>
+            <p>Entra el contenido real y la grilla queda anotada. La pregunta ahora es <strong>si el texto verdadero cabe y se entiende</strong>, no si se ve lindo.</p>
+            <ul><li>Titulares y textos reales, nada de "lorem ipsum"</li><li>Grilla, columnas y espaciados anotados</li><li>Un solo color de acento para marcar acciones</li><li>Es lo que se comparte con desarrollo para estimar</li></ul>
+          </div>
+          <div class="step" data-f="3">
+            <div class="when">Etapa 04–05 · Entregar</div><h3>Alta fidelidad</h3>
+            <p>La misma estructura con el sistema aplicado: color, tipografía, iconografía, estados e interacción. <strong>Se ve y se comporta como el producto final.</strong></p>
+            <ul><li>Componentes tomados de la librería, no dibujados de nuevo</li><li>Todos los estados definidos: vacío, error, carga</li><li>Es lo que se prueba con usuarios y se entrega a desarrollo</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="sec-head ghost"><div class="eyebrow">Sobre mí</div><h2>Ingeniera que<br>diseña.</h2></div>
+    <div class="sobre-grid">
+      <div class="sobre ghost">
+        <p class="lead">Estudié Ingeniería de Sistemas en la UMSS y terminé diseñando. No fue un desvío: entender cómo se construye un sistema es lo que me permite diseñar interfaces que el equipo de desarrollo puede implementar de verdad, sin la pelea habitual entre lo que se dibuja y lo que se programa. De ahí sale la palabra con la que me presento: <strong>devsign</strong>.</p>
+        <p>Hoy trabajo como diseñadora UX/UI de producto en proyectos de logística, salud y operaciones para clientes en Bolivia, Brasil y la región. Me toca lo mismo definir la arquitectura de información de un tablero con miles de registros diarios, que documentar una librería de componentes para que otros diseñadores la usen sin preguntarme nada.</p>
+        <p>En paralelo hago diseño gráfico e identidad: logotipos, manuales de marca y su bajada a producto digital. Esa doble mirada es la razón por la que mis interfaces no se ven como plantillas: la marca no se pega al final, se construye desde la estructura.</p>
+        <p>También hice un diplomado en ciberseguridad, que en la práctica se traduce en algo simple: pienso en los estados de error, en los permisos y en qué pasa cuando algo sale mal, no solo en el camino feliz.</p>
+      </div>
+      <div class="skills ghost">
+        <div class="skill"><strong>Figma</strong><span>Diseño · Prototipo · Librerías</span></div>
+        <div class="skill"><strong>Investigación</strong><span>Entrevistas · Journey maps</span></div>
+        <div class="skill"><strong>Arquitectura de información</strong><span>Flujos · Mapas de sitio</span></div>
+        <div class="skill"><strong>Prototipado</strong><span>Baja · Media · Alta</span></div>
+        <div class="skill"><strong>Sistemas de diseño</strong><span>Tokens · Componentes · Docs</span></div>
+        <div class="skill"><strong>Interfaz de datos</strong><span>Tableros · Tablas · Reportes</span></div>
+        <div class="skill"><strong>Identidad visual</strong><span>Logotipo · Manual de marca</span></div>
+        <div class="skill"><strong>Maquetación</strong><span>HTML · CSS · JS</span></div>
+        <div class="skill"><strong>Accesibilidad</strong><span>Contraste · Teclado · Estados</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="wrap">
+    <div class="eyebrow ghost" style="margin-bottom:20px">Contacto</div>
+    <h2 class="ghost">¿Armamos<br>algo <em>juntos</em>?</h2>
+    <p class="lead ghost" style="margin-top:20px">Estoy abierta a proyectos de producto digital, sistemas de diseño e identidad.</p>
+    <div class="links ghost">
+      <a class="link-pill" href="mailto:hinojosanasha@gmail.com">✉ hinojosanasha@gmail.com</a>
+      <a class="link-pill" href="https://www.linkedin.com/in/naomi-prado-hinojosa" target="_blank" rel="noopener">in LinkedIn</a>
+      <a class="link-pill" href="https://wa.me/59175979018" target="_blank" rel="noopener">WhatsApp · 759 79018</a>
+      <a class="link-pill" href="assets/docs/cv-naomi-prado.pdf" target="_blank">↓ CV</a>
+      <a class="link-pill" href="assets/docs/portafolio-naomi-prado.pdf" target="_blank">↓ Portafolio PDF</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span class="foot-b"><span class="logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M15 11 L6 20 L15 29" fill="none" stroke="#38BDF8" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 11 L34 20 L25 29" fill="none" stroke="#FF4E93" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="3.1" fill="#FF4E93"/></svg></span>Naomi Shafira Prado Hinojosa</span>
+    <span>Cochabamba, Bolivia · hinojosanasha@gmail.com</span>
+    <span>Diseñado y maquetado por ella misma · 2026</span>
+  </div>
+</footer>
+<div id="toast"><b>✓</b><span>Cambios guardados</span></div>
+
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pt">
+  <div class="panel-bg" data-close></div>
+  <div class="panel-body"><button class="panel-close" data-close>✕ Cerrar</button><div id="panel-content"></div></div>
+</div>
+
+
+<!-- VISOR DE IMÁGENES -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+  <button class="lb-btn lb-x" data-lb="close" aria-label="Cerrar">✕</button>
+  <button class="lb-btn lb-prev" data-lb="prev" aria-label="Anterior">‹</button>
+  <button class="lb-btn lb-next" data-lb="next" aria-label="Siguiente">›</button>
+  <figure class="lb-fig"><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+</div>
+
+<script src="js/portafolio.js"></script>
+</body>
+</html>
