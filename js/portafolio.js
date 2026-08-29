@@ -125,7 +125,7 @@ const P=[
  problem:"Operaciones logísticas donde cientos de movimientos diarios se coordinaban por teléfono, correo y planillas. La información existía, pero nadie tenía una vista única de qué estaba pasando ahora.",
  did:["Tablero de citas: agenda operativa con estados, filtros y reprogramación","Módulo de control de accesos y su flujo de autorizaciones","Scorecard e indicadores de desempeño por transportista","Librería de componentes para dashboards, reutilizada por el resto del equipo","Documentación de componentes y reglas de uso para nuevos diseñadores"],
  result:"Coordinación centralizada en una sola interfaz y un lenguaje visual consistente entre módulos construidos por equipos distintos.",
- note:"Las pantallas están bajo acuerdo de confidencialidad. Puedo mostrarlas y explicarlas en una entrevista."},
+ note:"Las pantallas están bajo acuerdo de confidencialidad."},
 
 {id:"ds",slug:"design-system",cat:"producto",size:"c-md",a:"#D6156A",tag:"Sistemas de diseño",name:"Sistemas de diseño",
  short:"Tokens, componentes y reglas documentadas para que un equipo entero diseñe igual sin preguntar.",
