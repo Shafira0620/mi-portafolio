@@ -1,0 +1,232 @@
+PORTAFOLIO · NAOMI SHAFIRA PRADO HINOJOSA
+Dirección visual: colores del logo de Figma
+
+==========================================
+ARCHIVOS
+==========================================
+index.html          Solo contenido y estructura.
+css/estilos.css     Todo el diseño. Empieza por el bloque 01 TOKENS.
+js/portafolio.js    Proyectos, composición del catálogo e interacciones.
+direcciones.html    Comparador de las cuatro direcciones que viste.
+assets/img/...      Tus capturas, una carpeta por proyecto.
+assets/docs/...     CV y portafolio en PDF.
+
+
+==========================================
+LA PALETA
+==========================================
+Los cinco colores salen del logo de Figma y cada uno
+tiene un trabajo fijo. El color dice de qué tipo es el
+proyecto, no decora.
+
+  Violeta  #A259FF   acción principal
+  Azul     #1ABCFE   producto y sistemas
+  Verde    #0ACF83   éxito y sector académico
+  Naranja  #F24E1E   marca e identidad
+  Coral    #FF7262   sitios corporativos
+
+Cada color tiene una versión más oscura para usarse como
+texto, porque los originales no pasan contraste sobre fondo
+claro. Están en :root como --violeta-tx, --azul-tx y demás.
+Si vas a escribir en color, usá siempre la versión -tx.
+
+Lo mismo pasa al revés: el #A259FF del logo con texto blanco
+encima se queda en 3.9:1 y la norma pide 4.5. Por eso los
+botones llenos usan --violeta-btn (#9346F5), que es el mismo
+violeta apenas más oscuro. El del logo sigue intacto para
+fondos, manchas y acentos.
+
+Para cambiar el color de un proyecto basta con cambiar su
+categoría en js/portafolio.js. La clase k-producto, k-web,
+k-academico o k-marca hace el resto.
+
+Tipografía Plus Jakarta Sans. Radios de 28, 20 y 14 px.
+
+El sitio abre SIEMPRE en claro. El oscuro queda como opción
+del botón de la barra y solo se recuerda si alguien lo eligió
+a mano; no se mira la preferencia del sistema. Sale de los
+mismos tokens, bloque :root[data-theme="dark"].
+
+
+==========================================
+SUBIR IMÁGENES
+==========================================
+Hasta cinco por proyecto, con estos nombres exactos:
+
+  assets/img/toloma/01.jpg   portada, la que sale en el registro
+  assets/img/toloma/02.jpg   galería dentro del caso
+  assets/img/toloma/03.jpg
+  assets/img/toloma/04.jpg
+  assets/img/toloma/05.jpg
+
+Las que falten no se muestran y no hay que tocar nada.
+Formato: 1600x1000 px o más, JPG, menos de 400 KB.
+
+Cada tarjeta baña su captura con el color de su categoría y la
+imagen crece un poco al pasar el cursor.
+
+Carpetas vacías que hoy muestran marcador:
+  protex   linkinmybio-ds   destinos-america
+  hospital-belga   linkinmybio   agenda-tareas
+
+Proyectos confidenciales. Aunque subas imágenes no se muestran:
+  deltax   lite-thinking   bitacora   trazabilidad
+
+
+==========================================
+ESPACIOS PARA PROYECTOS NUEVOS
+==========================================
+Al final del catálogo hay dos tarjetas punteadas que dicen
+"Espacio para un proyecto nuevo". Son las ranuras libres.
+
+Para llenar una:
+  1. Abrí js/portafolio.js y buscá PLANTILLA, al final del
+     objeto PROYECTOS. Copiá ese bloque adentro de PROYECTOS,
+     quitale los símbolos de comentario y poné tus datos.
+  2. Más abajo, en COMPOSICION, cambiá una línea
+     ["__libre", "c-md", ""]
+     por
+     ["mi-proyecto", "c-md", "a-wide"]
+  3. Subí las fotos a assets/img/mi-proyecto/01.jpg y demás.
+
+Si querés más espacios, duplicá una línea ["__libre", ...].
+Si preferís que no se vean mientras tanto, poné
+MOSTRAR_RANURAS en false, está justo debajo de COMPOSICION.
+
+
+==========================================
+LA PORTADA
+==========================================
+No lleva fotos: lleva dos pantallas de baja fidelidad dibujadas
+en SVG dentro de index.html, una de escritorio y una de móvil.
+Se pintan con los grises --wf-bg, --wf-box, --wf-line, --wf-fill
+y --wf-strong, que cambian solos entre tema claro y oscuro.
+
+Para retocarlas, editá los <svg> de la sección PORTADA en
+index.html. La etiqueta "baja fidelidad · donde empieza todo"
+es el <figcaption> de la primera.
+
+El cartel "Disponible para proyectos" vive en la esquina
+superior derecha de esa composición (.badge en el bloque 06).
+
+
+==========================================
+DOCUMENTOS
+==========================================
+  assets/docs/portafolio-naomi-prado.pdf
+  assets/docs/cv-naomi-prado.pdf
+
+Los dos botones de descarga en Contacto apuntan ahí.
+
+
+==========================================
+DÓNDE EDITAR CADA COSA
+==========================================
+Titulares, perfil, estudios de rediseño y contacto
+  index.html
+
+Proyectos: nombre, descripción, problema, qué hice, resultado
+  js/portafolio.js, objeto PROYECTOS
+
+Orden y tamaño de los registros del catálogo
+  js/portafolio.js, lista COMPOSICION
+
+  La retícula tiene 12 columnas. Cada tarjeta declara cuántas ocupa:
+    c-xl  12   destacada, imagen y texto lado a lado
+    c-lg   8
+    c-md   6
+    c-sm   4
+  Y la proporción de la lámina:
+    a-wide 16:10    a-std 4:3
+
+  Para mover un proyecto, cortá su línea y pegala donde quieras.
+  Procurá que cada franja de 12 columnas sume justo 12.
+
+Colores, tipografías y radios
+  css/estilos.css, bloque 01 TOKENS
+
+
+==========================================
+EL MOVIMIENTO
+==========================================
+Las curvas están en :root, bloque 01:
+
+  --e         lo que entra o aparece
+  --e-io      lo que se mueve de un sitio a otro
+  --e-cajon   el panel lateral de los casos
+
+Ninguna es ease-in. Una animación que arranca lenta se siente
+perezosa justo en el instante en que la persona está mirando.
+
+Duraciones, por si tocás algo:
+  hover de tarjeta, botón, flecha   180–260 ms
+  paneles y cajones                 420 ms al entrar, 260 al salir
+  revelado al hacer scroll          520 ms, una sola vez por bloque
+
+Salir siempre es más rápido que entrar: cuando algo se cierra la
+persona ya decidió y lo que quiere es que se quite de en medio.
+
+Tres detalles que conviene no deshacer:
+
+1. El revelado usa 'translate', no 'transform'. Son propiedades
+   distintas, así que el bloque puede entrar desde abajo y a la vez
+   levantarse con el cursor sin que una pise a la otra.
+
+2. Las reglas del revelado van dentro de :where(), que no suma
+   especificidad. Por eso cada componente conserva su propia
+   transición de hover.
+
+3. Las tarjetas entran en cascada corta. El retardo sale de la
+   variable --rd, que pone el JS al construir el catálogo.
+
+La portada se dibuja sola al cargar: primero la barra, después el
+bloque principal, la grilla anotada y al final las tarjetas. Son las
+capas .c1 a .c6 de los SVG en index.html. Se ve una vez por visita,
+que es cuando un detalle así se puede permitir durar.
+
+Con prefers-reduced-motion se quitan los desplazamientos pero se
+conservan los fundidos: menos movimiento, no cero.
+
+
+==========================================
+NOTAS TÉCNICAS
+==========================================
+Todo texto pequeño pasa contraste AA en los dos temas.
+Si bajás la opacidad de un gris, verificá que siga cumpliendo.
+
+Las imágenes del catálogo usan carga diferida. No les pongas
+display:none nunca: el navegador deja de descargarlas. Para
+ocultarlas usá opacity, como hace .shot.pending img.
+
+Si una imagen lleva atributos width y height en el HTML, hay que
+darle height:auto en CSS o el aspect-ratio no se aplica.
+
+El movimiento no usa escuchas de scroll en ningún lado: todo sale de
+IntersectionObserver. El revelado tiene una red de seguridad para que
+nada quede invisible si alguien entra por un enlace con ancla.
+
+La etiqueta de color de cada sección vive en un riel a la izquierda
+del título, no encima. El título carga su propio peso; la etiqueta
+clasifica. En pantalla angosta el riel se pliega arriba.
+
+La pastilla de la barra es un solo elemento que se desliza entre
+secciones. Si por lo que sea no llega a colocarse, el enlace activo
+se pinta en violeta oscuro y se sigue leyendo igual.
+
+En móvil la navegación no se esconde: baja a un riel que se desplaza
+en horizontal bajo la marca, con un degradado en el borde derecho que
+avisa que sigue. La sección activa se acerca sola si quedó fuera.
+
+
+==========================================
+PUBLICAR
+==========================================
+Subí la carpeta completa a Netlify, Vercel o GitHub Pages.
+No necesita servidor ni base de datos.
+
+Para verlo en tu computadora con todo funcionando, abrí una
+terminal en esta carpeta y ejecutá:
+
+  python3 -m http.server 8000
+
+y entrá a localhost:8000
